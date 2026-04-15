@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Calisthenics guide · Skills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-container">
+    <!-- HEADER TABS -->
+    <div class="header-tabs">
+        <div class="tab-nav">
+            <a href="home.html">Home</a>
+            <a href="levels.html">Levels</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="nutrition.html">Nutrition</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </div>
+
+    <!-- main content -->
+    <div class="page-content">
+        <div style="margin-bottom: 2rem;">
+    <input type="text" id="skillSearch" placeholder="🔍 Search skills..." style="width: 100%; max-width: 400px; padding: 12px 20px; font-size: 1rem; border: 2px solid #ddd; border-radius: 30px; outline: none;">
+</div>
+
+<script>  <!-- search engine for users to search the skill they want to learn -->
+document.getElementById('skillSearch').addEventListener('keyup', function() {
+    let searchValue = this.value.toLowerCase();
+    let skills = document.querySelectorAll('.skill-card, .skill-item, li'); 
+    
+    skills.forEach(skill => {
+        let text = skill.textContent.toLowerCase();
+        if (text.includes(searchValue)) {
+            skill.style.display = '';
+        } else {
+            skill.style.display = 'none';
+        }
+    });
+});
+</script>
+        
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <div style="flex: 2;">
+                <!-- BEGINNER SECTION with ID for anchor -->
+                <div id="beginner" style="background:#f3f9ff; border-radius: 20px; padding: 1.5rem; margin-bottom:20px; scroll-margin-top: 20px;">
+                    <h2>🌿 Beginner</h2>
+                    <p class="text-muted"><em>Welcome to your first beginner skill!</em></p>
+                    <h3>Frog Stand 🐸</h3>
+                    <div> <img class="skills-imgs" src="Gemini_Generated_Image_frogstand.png" alt="beginnerSkill"></div>
+                    <h3><b>2-3 weeks</b></h3>
+                    <p>beginner calisthenics balance skill that strengthens the shoulders, triceps, and core. It involves balancing on hands with knees resting on elbows</p>
+                    <ol style="margin-top: 16px; padding-left: 1.5rem;">
+        <li style="margin-bottom: 20px;">
+            <strong>🦵 Deep Squat Position (Preparation):</strong><br>
+            Squat down and place hands on the floor shoulder-width apart, fingers forward and spread wide
+        </li>
+        
+        <li style="margin-bottom: 20px;">
+            <strong>🦿 Knee-to-Elbow Touch:</strong><br>
+            Place knees on the outside of the upper triceps (not directly on the elbows)
+        </li>
+        
+        <li style="margin-bottom: 20px;">
+            <strong>⚖️ Weight Shift (Toe Taps):</strong><br>
+            Lean forward, shifting weight onto your hands while keeping feet on the ground. Alternate lifting one foot off the ground at a time to build stability
+        </li>
+        
+        <li style="margin-bottom: 20px;">
+            <strong>🎯 Frog Stand Hold (The Goal):</strong><br>
+            Lean forward, lift both feet off the ground, and hold the position. Aim to hold for 20–30 seconds before moving to more advanced variations.
+        </li>
+    </ol>
+</div>
+                </div>
+                <!-- INTERMEDIATE SECTION with ID -->
+                <div id="intermediate" style="background:#f3f9ff; border-radius: 20px; padding: 1.5rem; margin-bottom:20px; scroll-margin-top: 20px;">
+                    <h2>📈 Intermediate</h2>
+                    <p class="text-muted"><em>Welcome to your first intermediate skill!</em></p>
+                    <h3>Muscle up 💪</h3>
+                    <div> <img class="skills-imgs" src="muscleup.png" alt="intermediateskill"></div>
+                    <h3><b>2-3 weeks</b></h3>
+                    <p>A muscle up is a very popular cool looking skill. Once you unlock it, you can officially call yourself a good calisthenics athlete!</p>
+                    <p>Must at least be able to do 10 pushups to proceed</p>
+                    <ol style="margin-top: 16px; padding-left: 1.5rem;">
+        <li style="margin-bottom: 16px;">
+            <strong>💥 Explosive/High Pull-ups:</strong><br>
+            Pull the bar to your chest or lower, rather than just to your chin.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>📏 Straight Bar Dips:</strong><br>
+            Perform dips on a straight bar to build pushing strength for the top phase.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>🤲 False Grip Pull-ups:</strong><br>
+            Utilize a false grip (resting the bar on your lower palm) to make the transition smoother.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>⬇️ Straight Arm Pulldowns:</strong><br>
+            Engage lats by holding a band overhead and pulling it down with straight arms.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>🪢 Banded Muscle-ups:</strong><br>
+            Use a resistance band for assistance, allowing you to practice the full movement pattern.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>🦘 Jumping Muscle-ups:</strong><br>
+            Use a lower bar to jump through the transition, focusing on the fast movement.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>🐢 Negative Muscle-ups:</strong><br>
+            Start at the top, and slowly lower yourself down through the transition phase to build control.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>🌀 Use Momentum:</strong><br>
+            Combine a small kipping motion (hollow to arch) to gain momentum for the pull.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>⚡ Fast Transition(The Goal):</strong><br>
+            Quickly bring your chest over the bar as you pull up, shifting your weight forward.
+        </li>
+    </ol>
+                </div>
+                
+                <!-- ADVANCED SECTION with ID -->
+                <div id="advanced" style="background:#f3f9ff; border-radius: 20px; padding: 1.5rem; scroll-margin-top: 20px;">
+                    <h2>🚀 Advanced</h2>
+                    <p class="text-muted"><em>Welcome to your first advanced skill!</em></p>
+                    <h3>Iron cross🪨</h3>
+                    <div> <img class="skills-imgs" src="cross.png" alt="advancedSkill"></div>
+                    <h3><b>1-4 years</b></h3>
+                    <p>A pinnacle strength move in calisthenics, performed on still rings. It involves holding the body upright with arms extended straight out to the sides, forming a cross shape, while supporting one's entire body weight. 
+                    <p>This move is incredibly demanding, requiring extreme strength in the chest, shoulders, lats, and bicep tendons, along with intense shoulder stabilization. </p>
+                    <ol style="margin-top: 16px; padding-left: 1.5rem;">
+        <li style="margin-bottom: 16px;">
+            <strong>🪢 Support Position:</strong><br>
+            5 sets of 30-second holds on rings.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>⭕ Ring Dips:</strong><br>
+            5 sets of 5 reps (deep, with rings turned out).
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>🏋️ Weighted Pull-ups:</strong><br>
+            Strong weighted pull-up capability.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>📐 Straight Arm Strength:</strong><br>
+            Ability to hold a Planche Lean or similar straight-arm strength holds.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>🟡 Band-Assisted Iron Cross Holds:</strong><br>
+            Use heavy resistance bands attached to the rings to support your weight, allowing you to practice the form with reduced load.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>📏 Ring Iron Cross Pulls:</strong><br>
+            From a standing position holding the rings, lean forward with straight arms, pulling your arms to your sides while maintaining the cross shape.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>🇧🇬 Bulgarian Dips:</strong><br>
+            Perform dips with a forward lean, keeping the rings close to your body to target the lower chest and front delts.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>🦅 Straight Arm Pulldowns/Flyes:</strong><br>
+            Using rings or cables, perform straight-arm, lat-focused flyes, keeping the elbows locked.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>🐱 Skin the Cat:</strong><br>
+            Excellent for shoulder mobility and strength required for the cross.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>⚖️ Weighted Pulls (with bands):</strong><br>
+            Focus on slow, controlled, straight-arm pulls.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>🟢 Heavy Band Holds:</strong><br>
+            Isometrics to condition tendons.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>🟡 Light Band Holds:</strong><br>
+            Reduced assistance.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>🤲 False Grip Holds:</strong><br>
+            Eventually moving away from false grip for a pure cross.
+        </li>
+        
+        <li style="margin-bottom: 16px;">
+            <strong>🏆 Full Iron Cross Hold(the Goal)</strong><br>
+            Try to hold the pose for at least 3 seconds
+        </li>
+    </ol>
+</div>
+                    
+                </div>
+            </div>
+            
+
+        <div style="margin-top:25px;">
+            <a href="contact.html" class="btn-outline btn">➕ for more skills, contact us</a>
+        </div>
+    
+
+    <!-- FOOTER -->
+    <footer class="app-footer">
+        <div class="footer-logo">
+            <div class="img-placeholder img-placeholder-small" style="width:50px; height:35px; min-height:35px;"> <img src="Gemini_Generated_Image_icon.png" alt="logo" class="img-placeholder img-placeholder-small"></div>
+        </div>
+        <div class="footer-page-indicator">page [3]</div>
+        <div class="footer-btn">
+            <a href="contact.html" class="btn">get a personal trainer!!</a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,278 @@
+/* my css file with all style detals */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: #e1b6da;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    min-height: 100vh;
+}
+
+.app-container {
+    max-width: 1000px;
+    width: 100%;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+    overflow: hidden;
+    border: 1px solid #e9edf2;
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+}
+
+/* ===== HEADER TABS ===== */
+.header-tabs {
+    display: flex;
+    align-items: center;
+    background: #fafcff;
+    border-bottom: 1px solid #dee5ec;
+    padding: 0 1.5rem;
+}
+
+.tab-nav {
+    display: flex;
+    gap: 0;
+    flex: 1;
+}
+
+.tab-nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #4a6a8a;
+    font-size: 1rem;
+    padding: 1rem 1.8rem;
+    border-bottom: 3px solid transparent;
+    transition: all 0.15s;
+    position: relative;
+}
+
+.tab-nav a.active {
+    color: #0a2a44;
+    border-bottom: 3px solid #0a2a44;
+    background: linear-gradient(to bottom, transparent, rgba(10,42,68,0.03));
+}
+
+.tab-nav a:hover {
+    color: #0a2a44;
+    background: rgba(10,42,68,0.03);
+}
+
+/* main content */
+.page-content {
+    padding: 2rem 2rem 1.5rem;
+    flex: 1;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #330328;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #31052e;
+    margin: 1.2rem 0 1rem;
+}
+
+h3 {
+    font-weight: 600;
+    color: #1f3a57;
+    margin-bottom: 0.5rem;
+}
+
+/* buttons */
+.btn {
+    display: inline-block;
+    background: #4f244a;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.15s;
+    border: 1px solid #0a2a44;
+    box-shadow: 0 2px 6px rgba(0,20,40,0.08);
+}
+
+.btn-outline {
+    background: transparent;
+    color: #0a2a44;
+    border: 1.5px solid #0a2a44;
+    box-shadow: none;
+}
+
+.btn:hover {
+    background: #1f4a70;
+    border-color: #1f4a70;
+}
+
+.btn-outline:hover {
+    background: #e6edf6;
+}
+
+.btn-large {
+    padding: 14px 32px;
+    font-size: 1.1rem;
+}
+
+/* cards */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    margin: 2rem 0 1.5rem;
+}
+
+.level-card {
+    background: #f9fcff;
+    border-radius: 18px;
+    padding: 1.8rem 1.5rem;
+    flex: 1 1 180px;
+    border: 1px solid #dbe4ed;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.level-card h3 {
+    font-size: 1.7rem;
+    margin-bottom: 0.75rem;
+    color: #153e60;
+}
+
+/* image placeholder */
+.img-placeholder {
+    background: #e2eaf3;
+    border: 2px dashed #8aa9c9;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #3a6282;
+    min-height: 100px;
+    font-size: 1.8rem;
+}
+
+.img-placeholder-small {
+    min-height: 60px;
+    font-size: 1.2rem;
+}
+
+/* diagram sidebar elements */
+.diagram-meta {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    background: #f7faff;
+    padding: 1.2rem 1.8rem;
+    border-radius: 20px;
+    border: 1px dashed #b6c8db;
+    color: #2b4a6b;
+}
+
+.meta-col {
+    min-width: 150px;
+}
+
+.meta-col p {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+/* contact form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 550px;
+    margin: 1.8rem 0;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 14px 16px;
+    border: 1.5px solid #cfdde9;
+    border-radius: 18px;
+    font-size: 1rem;
+    background: white;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 1rem 0 1.8rem;
+}
+
+/* FOOTER — horizontal row*/
+.app-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: #fafcff;
+    border-top: 1.5px solid #dee5ec;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo .img-placeholder-small {
+    width: 60px;
+    height: 40px;
+    min-height: 40px;
+    font-size: 1rem;
+}
+
+.footer-page-indicator {
+    color: #4a6a8a;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.footer-btn .btn {
+    padding: 8px 20px;
+}
+
+/* utility */
+.text-muted {
+    color: #5e7e9c;
+}
+
+/* smooth scroll for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+.home-img {
+    width: 1000px;
+    height: 300px;
+}
+
+.skills-imgs {
+    width: 500px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+}
